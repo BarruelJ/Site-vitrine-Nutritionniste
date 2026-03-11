@@ -2,16 +2,16 @@
 
 :root {
   --color-bg: #F5F2ED;           /* Fond */
-  --color-primary: #5E8C8A;      /* Actions principales */
+  --color-primary: #a9bda4;      /* Actions principales */
   --color-secondary: #D4A5A5;    /* Accents doux */
-  --color-text: #334139;         /* Texte lisible */
+  --color-text: #2b2c2b;         /* Texte lisible */
   --color-text-light: #6B7A72;   /* texte secondaire */
   --color-white: #FFFFFF;        /* contrastes */
 
   --font-title: 'Cormorant Garamond', serif;
   --font-body: 'Open Sans', sans-serif;
 
-  --radius-organic: 24px;
+  --radius-organic: 20px;
   --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 

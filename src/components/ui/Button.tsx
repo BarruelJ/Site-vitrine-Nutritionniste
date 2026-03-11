@@ -5,6 +5,6 @@ interface ButtonProps {
 
 export default function Button({ label, href }: ButtonProps) {
   return (
-     <a href={href} className="bg-primary text-bg text-body text-sm p-3.5 rounded-organic hover:bg-secondary">{label}</a>
+     <a href={href} className="bg-primary text-bg text-body font-medium text-1xl p-4.5 rounded-organic hover:bg-secondary">{label}</a>
   )
 }
