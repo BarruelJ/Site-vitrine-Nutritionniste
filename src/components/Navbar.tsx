@@ -6,18 +6,25 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-50 flex justify-start h-20 md:h-25 bg-primary md:bg-[linear-gradient(to_right,var(--color-primary)_45%,var(--color-bg)_45%)] transition-all">
-            <div className="relative h-full w-full md:w-[50%] xl:w-2/5 items-center justify-center md:justify-end flex px-4 md:pr-10 xl:pr-25">
-                <h1 className="text-2xl sm:text-4xl lg:text-4xl xl:text-5xl font-title text-text font-bold antialiased">
-                    L'Équilibre Nutrition
-                </h1>
-            </div>
+        <nav className="fixed top-0 left-0 w-full z-50 h-12 md:h-18 flex items-center transition-all
+    md:before:content-[''] md:before:absolute md:before:inset-y-0 md:before:left-0 md:before:w-[40%] 
+    md:before:bg-primary/30 md:before:-z-10
+    bg-primary md:bg-bg ">
 
-            <div className="hidden md:flex h-full items-center gap-6 lg:gap-10 pl-5 font-body text-xl font-medium text-text/70">
-                <Navlink href="#Accueil" label="Accueil" />
-                <Navlink href="#About" label="À Propos" />
-                <Navlink href="#Service" label="Services" />
-                <Navlink href="#Contact" label="Contact" />
+            <div className="max-w-7xl mx-auto w-full flex items-center h-full px-6 lg:px-10">
+
+                <div className="w-full md:w-[40%] flex justify-center md:justify-center">
+                    <h1 className="text-xl sm:text-2xl lg:text-3xl font-title text-text font-bold antialiased">
+                        L'Équilibre Nutrition
+                    </h1>
+                </div>
+
+                <div className="hidden md:flex items-center gap-8 lg:gap-12 ml-10 font-body text-md font-medium text-text/70">
+                    <Navlink href="#Accueil" label="Accueil" />
+                    <Navlink href="#About" label="À Propos" />
+                    <Navlink href="#Service" label="Accompagnement" />
+                    <Navlink href="#Contact" label="Contact" />
+                </div>
             </div>
 
             <button

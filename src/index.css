@@ -1,34 +1,33 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #F5F2ED;           /* Fond */
-  --color-primary: #a9bda4;      /* Actions principales */
-  --color-secondary: #D4A5A5;    /* Accents doux */
-  --color-text: #2b2c2b;         /* Texte lisible */
-  --color-text-light: #6B7A72;   /* texte secondaire */
-  --color-white: #FFFFFF;        /* contrastes */
+   --color-bg: #F8F9FA;
+  --color-primary: #4f88b6;      
+  --color-secondary: #E07A5F; 
+  --color-text: #1D2D2C;
+  --color-text-light: #526362;
+  --color-white: #FFFFFF;
+
+  --radius-organic: 12px;  
 
   --font-title: 'Cormorant Garamond', serif;
   --font-body: 'Open Sans', sans-serif;
 
-  --radius-organic: 20px;
   --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 @theme {
-  --color-bg: #F5F2ED;
-  --color-primary: #5E8C8A;
-  --color-secondary: #D4A5A5;
-  --color-text: #334139;
-  --color-text-light: #6B7A72;
+  --color-bg: #F8F9FA;
+  --color-primary: #4f88b6;      
+  --color-secondary: #E07A5F; 
+  --color-text: #1D2D2C;
+  --color-text-light: #526362;
   --color-white: #FFFFFF;
 
-   --font-title: 'Cormorant Garamond', serif;
+  --radius-organic: 12px; 
+
+  --font-title: 'Cormorant Garamond', serif;
   --font-body: 'Open Sans', sans-serif;
-
-  --radius-organic: 24px;
-  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
-
 }
 
 body {

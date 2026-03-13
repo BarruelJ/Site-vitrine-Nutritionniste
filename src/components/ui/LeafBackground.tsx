@@ -1,5 +1,5 @@
 interface LeafBackgroundProps {
-  className?: string; // Pour contrôler l'opacité et la couleur avec Tailwind
+  className?: string;
 }
 
 const LeafBackground = ({ className = "w-full h-auto opacity-10 text-primary" }: LeafBackgroundProps) => (

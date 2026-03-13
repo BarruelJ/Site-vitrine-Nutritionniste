@@ -3,78 +3,73 @@ import cardIcon2 from "../assets/icons/icon_card_2.webp";
 import cardIcon3 from "../assets/icons/icon_card_3.webp";
 import cardIcon4 from "../assets/icons/icon_card_4.webp";
 import portraitHero from "../assets/portrait_hero.webp";
-
-import LeafBackground from "./ui/LeafBackground";
 import CurvedArrow from "./ui/CurveArrow";
 
 const cards = [
     {
-        title: "Nutrition Consciente",
-        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus minima natus, consequatur ut tempore eos consequuntur qui!",
+        title: "Optimisation Métabolique",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus velit illo deleniti laboriosam voluptatem !",
         position: "top-left",
         imgSrc: cardIcon1,
-        alt: "Illustration Artichaut"
+        alt: "Performance énergétique"
     },
     {
-        title: "Gestion du Stress",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur non doloribus, quibusdam ex aspernatur vel ipsum nulla quae?",
+        title: "Résilience & Récupération",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla distinctio quod cum fuga cumque optio natus delectus.",
         position: "top-right",
         imgSrc: cardIcon2,
-        alt: "Illustration lavande"
+        alt: "Récupération athlétique"
     },
     {
-        title: "Harmonie Intérieure",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ratione ut cum, at animi placeat necessitatibus blanditiis distinctio similique.",
+        title: "Focus & Mental",
+        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime aut enim rem! Magni debitis fugit magnam doloribus tenetur.",
         position: "bottom-left",
         imgSrc: cardIcon3,
-        alt: "Illustration infini"
+        alt: "Focus mental"
     },
     {
-        title: "Vitalité Naturelle",
-        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quod libero perferendis dolorem accusantium aut.",
+        title: "Équilibre Micronutritionnel",
+        desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus totam amet quam atque necessitatibus ? ",
         position: "bottom-right",
         imgSrc: cardIcon4,
-        alt: "Illustration soleil"
+        alt: "Santé de l'athlète"
     },
 ];
 
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen bg-bg pt-32 pb-20 px-4 overflow-hidden">
-            {/* Branche */}
-            <div className="absolute z-51 *: -top-10 -right-20 w-125 h-auto pointer-events-none -rotate-160">
-                <LeafBackground className="text-primary/10" />
-            </div>
+        <section className="relative min-h-screen bg-bg pt-32 pb-20 px-4 overflow-hidden">  
 
             {/* FLÈCHES DE LIAISON */}
             {/* Haut */}
-            <div className="absolute top-[26%] left-1/2 -translate-x-1/2 w-18 h-18 pointer-events-none hidden xl:block">
-                <CurvedArrow className="text-secondary/30 rotate-20" />
+            <div className="absolute z-2 top-[26%] left-1/2 -translate-x-1/2 w-18 h-18 pointer-events-none hidden xl:block">
+                <CurvedArrow className="text-secondary rotate-20" />
             </div>
 
             {/* Droite */}
-            <div className="absolute top-[53%] right-[24%] -translate-y-1/2 w-18 h-18 pointer-events-none hidden xl:block">
-                <CurvedArrow className="text-secondary/30 rotate-100" />
+            <div className="absolute z-2 top-[52%] right-[24%] -translate-y-1/2 w-18 h-18 pointer-events-none hidden xl:block">
+                <CurvedArrow className="text-secondary rotate-100" />
             </div>
 
             {/* Bas */}
-            <div className="absolute bottom-[20%] left-1/2 -translate-x-1/2 w-18 h-18 pointer-events-none hidden xl:block">
-                <CurvedArrow className="text-secondary/30 rotate-190" />
+            <div className="absolute z-2 bottom-[20%] left-1/2 -translate-x-1/2 w-18 h-18 pointer-events-none hidden xl:block">
+                <CurvedArrow className="text-secondary rotate-190" />
             </div>
 
             {/* Gauche */}
-            <div className="absolute top-[52%] left-[24%] -translate-y-1/2 w-18 h-18 pointer-events-none hidden xl:block">
-                <CurvedArrow className="text-secondary/30 rotate-[-100deg]" />
+            <div className="absolute z-2 top-[52%] left-[24%] -translate-y-1/2 w-18 h-18 pointer-events-none hidden xl:block">
+                <CurvedArrow className="text-secondary rotate-[-100deg]" />
             </div>
 
 
             <div className="max-w-7xl mx-auto">
                 {/* Titre Principal */}
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-title text-bold text-text m-4">
-                        Une Approche Intégrale de votre Santé
+                <div className="mb-20">
+                    <h2 className="text-4xl md:text-5xl font-title font-bold text-text mt-2">
+                        Une Analyse de votre Santé
                     </h2>
+                    <div className="w-20 h-1.5 bg-secondary mt-6"></div>
                 </div>
 
                 {/* Cartes + Cercle Central */}
@@ -90,7 +85,7 @@ export default function Hero() {
                     </div>
 
                     {cards.map((card, index) => (
-                        <div key={index} className="relative bg-primary/30 border-text/50 rounded-full p-8 md:p-10 flex flex-col md:flex-row gap-6 items-center">
+                        <div key={index} className="relative z-1 bg-primary/30 border-text/50 rounded-organic p-8 md:p-10 flex flex-col md:flex-row gap-6 items-center">
 
                             <div className="w-20 h-20 md:w-24 md:h-24 shrink-0 flex items-center justify-center">
                                 <img
@@ -105,7 +100,7 @@ export default function Hero() {
                                 <p className="font-body text-text/70 text-l mb-4">{card.desc}</p>
                                 <a href="#" className="relative group inline-block font-body text-xs font-bold uppercase pb-2 transition-colors">
                                     Plus d'infos
-                                    <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-primary transition-all duration-300 ease-in-out w-0 group-hover:w-[80%]`} />
+                                    <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-secondary transition-all duration-300 ease-in-out w-0 group-hover:w-[80%]`} />
                                 </a>
                             </div>
                         </div>
@@ -114,7 +109,7 @@ export default function Hero() {
                 </div>
 
                 <div className="flex justify-center mt-16">
-                    <button className="bg-primary hover:bg-text-light text-white font-body px-10 py-4 rounded-xl transition-all shadow-md">
+                    <button className="bg-secondary hover:bg-text-light text-white font-body text-lg px-10 py-4 rounded-xl transition-all shadow-md">
                         Réserver une Consultation
                     </button>
                 </div>
